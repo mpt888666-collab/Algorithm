@@ -14,7 +14,7 @@ public:
         _set_all_value = value;
     }
 
-    Value get(const Key &key) {
+    Value get(const Key &key) const {      
         auto it = _map.find(key);
         if (it == _map.end()) {
             if constexpr (std::numeric_limits<Value>::is_specialized)
