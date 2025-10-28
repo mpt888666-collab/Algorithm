@@ -1,5 +1,5 @@
 //set_all功能的hash表，原有基础上增加了时间戳功能，set_all_time之前的的所有value都变成了set_all_value
-
+//设计的是通用版，使用更加方便
 template<typename Key, typename Value>
 class My_Unordered_Map {
 public:
